@@ -18,6 +18,7 @@ V balíčku `nette/utils` najdete sadu užitečných tříd pro každodenní pou
 | [Parsování a generování JSON |json] | Nette\Utils\Json
 | [Reflexe PHP |reflection] | Nette\Utils\Reflection
 | [Souborový systém |filesystem] | Nette\Utils\FileSystem
+| [Finder] | Nette\Utils\Finder
 | [Pomocné funkce |helpers] | Nette\Utils\Helpers
 | [Typy |type] | Nette\Utils\Type
 

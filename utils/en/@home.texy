@@ -18,6 +18,7 @@ In package `nette/utils` you will find a set of useful classes for everyday use:
 | [PHP Reflection  |reflection] | Nette\Utils\Reflection
 | [JSON] | Nette\Utils\Json
 | [Filesystem |filesystem] | Nette\Utils\FileSystem
+| [Finder] | Nette\Utils\Finder
 | [Helper Functions |helpers] | Nette\Utils\Helpers
 | [Types |type] | Nette\Utils\Type
 

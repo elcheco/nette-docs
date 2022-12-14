@@ -6,6 +6,7 @@ Balíček nette/utils
 - [Callbacky |callback]
 - [Datum a čas |datetime]
 - [Souborový systém |filesystem]
+- [Finder]
 - [Pomocné funkce |helpers]
 - [HTML elementy |html-elements]
 - [Obrázky |images]
@@ -23,6 +24,5 @@ Balíček nette/utils
 Další nástroje
 --------------
 - [NEON|neon:]
-- [Finder]
 - [Hashování hesel |security:passwords]
 - [Parsování a skládání URL |http:urls]
