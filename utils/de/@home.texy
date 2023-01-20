@@ -1,0 +1,42 @@
+Dienstprogramme
+***************
+
+.[perex]
+Im Paket `nette/utils` finden Sie eine Reihe von nützlichen Klassen für den täglichen Gebrauch:
+
+| [PHP Object Enhancements |smartobject] | Nette\SmartObject
+| [Bilder |Images] | Nette\Utils\Image
+| [Paginator] | Nette\Utils\Paginator
+| [Validatoren |Validators] | Nette\Utils\Validatoren
+| [Zeichenketten |Strings] | Nette\Utils\Strings
+| [Floats vergleichen |floats] | Nette\Utils\Floats
+| [Rückruf |Callback] | Nette\Utils\Callback
+| [Arrays] | Nette\Utils\Arrays
+| [Datum und Uhrzeit |datetime] | Nette\Utils\DateTime
+| [Generieren von HTML-Code |html-elements] | Nette\Utils\Html
+| [Zufällige Zeichenketten generieren |random] | Nette\Utils\Random
+| [PHP-Reflexion |reflection] | Nette\Utils\Reflexion
+| [JSON] | Nette\Utils\Json
+| [Dateisystem |filesystem] | Nette\Utils\FileSystem
+| [Finder] | Nette\Utils\Finder
+| [Helferfunktionen |helpers] | Nette\Utils\Helfer
+| [Typen |type] | Nette\Utils\Type
+
+
+Installation .[#toc-installation]
+---------------------------------
+
+Laden Sie das Paket herunter und installieren Sie es mit [Composer |best-practices:composer]:
+
+```shell
+composer require nette/utils
+```
+
+| Version | kompatibel mit PHP
+|-----------|-------------------
+| Nette Utils 4.0 | PHP 8.0 - 8.2
+| Nette Utils 3.2 | PHP 7.2 - 8.2
+| Nette Utils 3.0 - 3.1 | PHP 7.1 - 8.0
+| Nette Utils 2.5 | PHP 5.6 - 8.0
+
+Gilt für die neuesten Patch-Versionen.

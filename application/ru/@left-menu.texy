@@ -5,6 +5,8 @@
 - [Как работают приложения? |how-it-works]
 - [Bootstrap]
 - [Презентеры |presenters]
+- [Шаблоны |templates]
+- [Модули |modules]
 - [Маршрутизация |routing]
 - [Создание URL-ссылок |creating-links]
 - [Интерактивные компоненты |components]
@@ -16,3 +18,4 @@
 Дальнейшее чтение
 -----------------
 - [Лучшие практики |best-practices:]
+- [Устранение неполадок |nette:troubleshooting]

@@ -1,0 +1,28 @@
+
+
+Paquet net/utils .[#toc-package-nette-utils]
+--------------------------------------------
+- [Tableaux |Arrays]
+- [Retour d'appel |Callback]
+- [Date et heure |datetime]
+- [Système de fichiers |filesystem]
+- [Finder]
+- [Fonctions d'aide |helpers]
+- [Éléments HTML |HTML Elements]
+- [Images]
+- [JSON]
+- [Paginateur |paginator]
+- [Chaînes aléatoires |random]
+- [SmartObject]
+- [PHP Reflection |reflection]
+- [Chaînes de caractères |Strings]
+- [Floats]
+- [Types PHP |type]
+- [Validateurs |validators]
+
+
+Autres utilitaires .[#toc-other-utilities]
+------------------------------------------
+- [NEON |neon:]
+- [Hachage de mots de passe |security:passwords]
+- [Analyseur et constructeur d'URL |http:urls]

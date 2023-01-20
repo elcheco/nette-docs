@@ -1,0 +1,28 @@
+
+
+Пакет nette/utils
+-----------------
+- [Поле |arrays]
+- [Обратные вызовы |callback]
+- [Дата и время |datetime]
+- [Файловая система |filesystem]
+- [Finder]
+- [Функции-помощники |helpers]
+- [Элементы HTML |html-elements]
+- [Изображения |images]
+- [JSON]
+- [Пагинатор |paginator]
+- [Случайные строки |random]
+- [SmartObject |smartobject]
+- [PHP Отражение |reflection]
+- [Строки |strings]
+- [Floats]
+- [Типы PHP |type]
+- [Валидатор |validators]
+
+
+Другие инструменты
+------------------
+- [НЕОН |neon:]
+- [Хеширование паролей |security:passwords]
+- [Разбор и сворачивание URL-адресов |http:urls]

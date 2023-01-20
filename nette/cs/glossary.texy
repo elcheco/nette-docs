@@ -66,6 +66,12 @@ Kontrolní znaky
 Kontrolní znaky jsou neviditelné znaky, které se mohou vyskytovat v textu a případně i způsobovat problémy. K jejich hromadnému odstranění ze souborů můžete použít [Code Checker|code-checker:] a k odstranění z proměnné funkci [Strings::normalize()|utils:strings#normalize].
 
 
+Eventy (události) .{toc: události}
+----------------------------------
+Událost je očekávaná situace v objektu, která když nastane, zavolají se tzv. handlery, tedy funkce reagující na událost. Událostí může být třeba odeslání formuláře, přihlášení uživatele atd. Například k přihlášení uživatele dochází v metodě `Nette\Security\User::login()`.
+Objekt `User` má veřejnou proměnnou `$onLoggedIn`, což je pole, do kterého kdokoliv může přidat callback. V okamžiku, kdy se uživatel přihláší, tak metoda `login()` zavolá všechny callbacky v poli. Název proměnné ve tvaru `onXyz` je konvence používaná v celém Nette.
+
+
 Latte
 -----
 Jeden z nejpokrokovějších [šablonovacích systémů |latte:].
@@ -73,7 +79,9 @@ Jeden z nejpokrokovějších [šablonovacích systémů |latte:].
 
 Model
 -----
-Model je datový a zejména funkční základ celé aplikace. Je v něm obsažena celá aplikační logika (používá se i termín byznys logika). Je to ono **M** z **M**VC nebo MVP. Jakákoliv akce uživatele (přihlášení,  vložení zboží do košíku, změna hodnoty v databázi) představuje akci modelu. Model si spravuje svůj vnitřní stav a ven nabízí pevně dané rozhraní. Voláním funkcí tohoto rozhraní můžeme zjišťovat či měnit jeho stav. Model neví o existenci [#view] nebo [controlleru |#controller].
+Model je datový a zejména funkční základ celé aplikace. Je v něm obsažena celá aplikační logika (používá se i termín byznys logika). Je to ono **M** z **M**VC nebo MVP. Jakákoliv akce uživatele (přihlášení,  vložení zboží do košíku, změna hodnoty v databázi) představuje akci modelu.
+
+Model si spravuje svůj vnitřní stav a ven nabízí pevně dané rozhraní. Voláním funkcí tohoto rozhraní můžeme zjišťovat či měnit jeho stav. Model neví o existenci [#view] nebo [controlleru |#controller].
 
 
 Model-View-Controller
@@ -88,8 +96,9 @@ Architektura, vycházející z [#Model-View-Controller].
 
 Modul
 -----
-[Modul |application:modules] představuje v Nette Framework balíček presenterů a šablon, případně i komponent a modelů, které dodávají presenteru data. Je to tedy určitá logická část aplikace. Například e-shop může mít tři moduly:
+[Modul |application:modules] představuje v Nette Framework balíček presenterů a šablon, případně i komponent a modelů, které dodávají presenteru data. Je to tedy určitá logická část aplikace.
 
+Například e-shop může mít tři moduly:
 1) katalog produktů s košíkem
 2) administrace pro zákazníka
 3) administrace pro provozovatele
@@ -120,12 +129,6 @@ SameSite cookies poskytují mechanismus jak rozpoznat, co vedlo k načtení str�
 Snippet
 -------
 Výstřižek, část stránky, kterou lze samostatně překreslit během AJAXového požadavku.
-
-
-Události
---------
-Událost je očekávaná situace v objektu, která když nastane, zavolají se tzv. handlery, tedy funkce reagující na událost. Událostí může být třeba odeslání formuláře, přihlášení uživatele atd. Například k přihlášení uživatele dochází v metodě `Nette\Security\User::login()`.
-Objekt `User` má veřejnou proměnnou `$onLoggedIn`, což je pole, do kterého kdokoliv může přidat callback. V okamžiku, kdy se uživatel přihláší, tak metoda `login()` zavolá všechny callbacky v poli. Název proměnné ve tvaru `onXyz` je konvence používaná v celém Nette.
 
 
 View

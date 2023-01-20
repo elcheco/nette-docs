@@ -1,0 +1,42 @@
+Инструменты
+***********
+
+.[perex]
+В пакете `nette/utils` вы найдете набор полезных классов для повседневного использования:
+
+| [Расширения объектов в PHP |smartobject] | Nette\SmartObject
+| [Изображения |images] | Nette\Utils\Image
+| [Пагинация |paginator] | Nette\Utils\Paginator
+| [Валидация переменных |validators] | Nette\Utils\Validators
+| [Строки |strings] | Nette\Utils\Strings
+| [Floats] | Nette\Utils\Floats
+| [Callback] | Nette\Utils\Callback
+| [Поле |arrays] | Nette\Utils\Arrays
+| [Дата и время |datetime] | Nette\Utils\DateTime
+| [Элементы HTML |html-elements] | Nette\Utils\Html
+| [Генерация случайных строк |random] | Nette\Utils\Random
+| [Парсинг и генерация JSON |json] | Nette\Utils\Json
+| [PHP Отражение |reflection] | Nette\Utils\Reflection
+| [Файловая система |filesystem] | Nette\Utils\FileSystem
+| [Finder] | Nette\Utils\Finder
+| [Функции-помощники |helpers] | Nette\Utils\Helpers
+| [Типы |type] | Nette\Utils\Type
+
+
+Установка .[#toc-installation]
+==============================
+
+Загрузите и установите библиотеку с помощью [Composer |best-practices:composer]:
+
+```shell
+composer require nette/utils
+```
+
+| Версия, совместимая с PHP
+|-----------|-------------------
+| Nette Utils 4.0 | PHP 8.0 - 8.2
+| Nette Utils 3.2 | PHP 7.2 - 8.2
+| Nette Utils 3.0 - 3.1 | PHP 7.1 - 8.0
+| Nette Utils 2.5 | PHP 5.6 - 8.0
+
+Действителен для последней версии патча.
