@@ -22,6 +22,20 @@ Controller
 Řadič, který zpracovává požadavky uživatele a na jejich základě pak volá patřičnou aplikační logiku (tj. [#model]) a poté požádá [#view] o vykreslení dat. Obdobou kontrolerů v Nette Frameworku jsou [presentery|#presenter].
 
 
+Cross-Site Scripting (XSS)
+--------------------------
+Cross-Site Scripting je metoda narušení webových stránek zneužívající neošetřených výstupů. Útočník pak dokáže do stránky podstrčit svůj vlastní kód a tím může stránku pozměnit nebo dokonce získat citlivé údaje o návštěvnících. Proti XSS se lze bránit jen důsledným a korektním ošetřením všech řetězců.
+
+Nette Framework přichází s revoluční technologií [Context-Aware Escaping |latte:safety-first#Kontextově sensitivní escapování], která vás provždy zbaví rizika Cross-Site Scriptingu. Všechny výstupy totiž ošetřuje automaticky a tak se nemůže stát, že by kodér na něco zapomněl.
+
+
+Cross-Site Request Forgery (CSRF)
+---------------------------------
+Útok Cross-Site Request Forgery spočívá v tom, že útočník naláká oběť na stránku, která nenápadně v prohlížeči oběti vykoná požadavek na server, na kterém je oběť přihlášena, a server se domnívá, že požadavek vykonala oběť o své vůli. A tak pod identitou oběti provede určitý úkon, aniž by ta o tom věděla. Může jít o změnu nebo smazání dat, odeslání zprávy atd.
+
+Nette Framework **automaticky chrání formuláře a signály v presenterech** před tímto typem útoku. A to tím, že zabraňuje jejich odeslání či vyvolání z jiné domény.
+
+
 Escapování
 ----------
 Escapování je převod znaků majících v daném kontextu speciální význam na jiné odpovídající sekvence. Příklad: do řetězce ohraničeného uvozovkami chceme zapsat uvozovky. Jelikož uvozovky mají v kontextu řetězce speciální význam a jejich prosté zapsání by bylo chápáno jako ukončení řetězce, je potřeba je zapsat jinou odpovídající sekvencí. Jakou přesně určují pravidla kontextu.
@@ -98,6 +112,11 @@ Router
 Obousměrný překladač mezi HTTP požadavkem / URL a akcí presenteru. Obousměrné znamená, že z HTTP požadavku lze odvodit [akci presenteru |#akce presenteru], ale také obráceně k akci vygenerovat odpovídající URL. Více v kapitole o [routování URL |application:routing].
 
 
+SameSite cookie
+---------------
+SameSite cookies poskytují mechanismus jak rozpoznat, co vedlo k načtení stránky. Může mít tři hodnoty: `Lax`, `Strict` a `None` (ten vyžaduje HTTPS). Pokud požadavek na stránku přichází přímo z webu nebo uživatel otevře stránku přímým zadáním do adresního řádku nebo kliknutím na záložku, prohlížeč pošle serveru všechny cookies (tedy s příznaky `Lax`, `Strict` i `None`). Pokud se uživatel na web proklikne přes odkaz z jiného webu, předají se serveru cookies s příznaky `Lax` a `None`. Pokud požadavek vznikne jiným způsobem, jako je odeslání POST formuláře z jiného webu, načtení uvnitř iframe, pomocí JavaScriptu, atd., odešlou se jen cookies s příznakem `None`.
+
+
 Snippet
 -------
 Výstřižek, část stránky, kterou lze samostatně překreslit během AJAXového požadavku.
@@ -121,4 +140,5 @@ Pokyny pro autory:
 - na pojmy zde pak lze odkazovat z jiných částí dokumentace případně z fóra
 \--
 
+{{leftbar: www:@menu-common}}
 {{priority: -2}}
