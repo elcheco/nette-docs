@@ -36,6 +36,7 @@
 ----------------------------------
 - [Перевод форм и шаблонов |translations]
 - [Как загрузить файл конфигурации |how-to-load-configuration]
+- [Почему Nette использует константную нотацию PascalCase? |https://blog.nette.org/en/for-less-screaming-in-the-code]
 
 </div>
 <div>
